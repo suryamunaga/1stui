@@ -6,8 +6,6 @@ export const Input = ({
   value,
   handleChange,
   model,
-  options,
-  values,
   isReadOnly,
 }) => {
   switch (type) {
