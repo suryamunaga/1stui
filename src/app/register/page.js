@@ -4,8 +4,6 @@ import styles from './register.module.css'
 import configration from './configuration.json'
 import Link from 'next/link'
 import { Input } from '@/inputControls/Input'
-import { Select } from '@/inputControls/Select'
-import { Textarea } from '@/inputControls/Textarea'
 import { appStore } from '@/store/appStore'
 import { toast } from 'react-toastify'
 import { hanldeFiledValidation, handleFormValidation, formReset } from '@/validations/appValidations'
@@ -40,6 +38,7 @@ const Register = () => {
             appStore.dispatch({ type: "LOADER", payload: false })
         }
     }
+
     const prepareInputControls = (tag, obj) => {
         switch (tag) {
             case 'input':
