@@ -25,47 +25,6 @@ export const Input = ({
             type={type}
           />
         </Fragment>
-      );
-    case "radio":
-      return (
-        <Fragment>
-          {options.map((val, index) => {
-            return (
-              <>
-                <input
-                  checked={value == values[index]}
-                  value={values[index]}
-                  className="ms-3"
-                  name={model}
-                  onChange={handleChange}
-                  type={type}
-                />{" "}
-                {val}
-              </>
-            );
-          })}
-        </Fragment>
-      );
-    case "checkbox":
-      const checkedArr = value.split(",");
-      return (
-        <Fragment>
-          {options.map((val, index) => {
-            return (
-              <>
-                <input
-                  checked={checkedArr.includes(values[index])}
-                  value={values[index]}
-                  className="ms-3"
-                  name={model}
-                  onChange={handleChange}
-                  type={type}
-                />{" "}
-                {val}
-              </>
-            );
-          })}
-        </Fragment>
-      );
+      ); 
   }
 };

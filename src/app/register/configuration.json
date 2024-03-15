@@ -48,7 +48,7 @@
     {
         "lbl": "AGE",
         "tag": "input",
-        "model": "age",
+        "model": "number",
         "type": "text",
         "errorMessage": "",
         "value": "",
